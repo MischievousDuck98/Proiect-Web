@@ -1,0 +1,239 @@
+@import url(fontawesome-free-5.11.2-web\fontawesome-free-5.11.2-web\css);
+@import url(https://fonts.googleapis.com/css?family=Monoton&display=swap);
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+* {box-sizing: border-box;}
+
+input[type=text], input[type=email],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: lime;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: navy;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+div.backgrim {
+  background-image: url("./../images/back_img.jpg");
+  filter: blur(.4em);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+footer {
+    background-color:black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    flex: 1;
+    bottom: 0;
+    left:0;
+    right: 0;
+ 
+ }
+
+ul.scrollmenu {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  ul.scrollmenu li{
+    display: inline-block;
+    color: navy;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+  }
+ 
+  #centeredmenu {
+    clear: both;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #000; 
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif; 
+    font-size: 90%;
+    z-index: 1000;
+    position: relative;
+  }
+  
+  #centeredmenu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    float:right;
+    position:relative;
+    right:50%;
+  }
+  
+  #centeredmenu ul li {
+    margin: 0 0 0 1px;
+    padding: 0;
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 1px;
+  }
+  
+  #centeredmenu ul li a {
+    display: block;
+    margin:0;
+    padding:.6em .5em .4em;
+    font-size:1em;
+    line-height:1em;
+    background:#ddd;
+    text-decoration:none;
+    color:#444;
+    font-weight:bold;
+    border-bottom:1px solid #000;
+  }
+  #centeredmenu ul li.active a {
+    color: #fff;
+    background: #000;
+  }
+  #centeredmenu ul li a:hover {
+    background: #36f; 
+    color: #fff;
+    border-bottom: 1px solid #03f;
+    
+  }
+  
+  #centeredmenu ul ul {
+    display:none; 
+    position:absolute;
+    top:2em;
+    left:0;
+    right:auto; 
+    width:10em; 
+  }
+  #centeredmenu ul ul li {
+    left:auto;  
+    margin:0; 
+    clear:left;
+    width:100%;
+  }
+  
+  #centeredmenu ul ul li a,
+  #centeredmenu ul li.active li a,
+  #centeredmenu ul li:hover ul li a,
+  #centeredmenu ul li.hover ul li a {
+    font-size:.8em;
+    font-weight:normal; 
+    background:#eee;
+    color:#444;
+    line-height:1.4em; 
+    border-bottom:1px solid #ddd;
+  }
+  
+  #centeredmenu ul ul li a:hover,
+  #centeredmenu ul li.active ul li a:hover,
+  #centeredmenu ul li:hover ul li a:hover,
+  #centeredmenu ul li.hover ul li a:hover { 
+    background:#36f; 
+    color:#fff;
+  }
+  
+  #centeredmenu ul li:hover ul,
+  #centeredmenu ul li.hover ul { 
+    display:block;
+  }
+
+  #centeredmenu ul li .has-submenu .submenu {
+    display: none;
+    position: absolute;
+    top:0;
+    left: 144px;
+    width: 100%;
+  }
+  
+  
+  #centeredmenu ul li .has-submenu:hover .submenu{
+      display: block;
+  }
+  
+  h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 1em;
+  }
+  .sep{
+     clear: both;
+  }
+   
+  @media screen and (max-width: 1000px) {
+    body {
+      background-color: lightseagreen;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    body {
+      background-color: gold;
+    }
+  }
+  
+  @media screen and (max-width: 320px)
+  {
+      footer{
+        min-width: 20em;
+        position: absolute;
+      }
+  
+  }
+  
+  @media screen and (max-width: 1920px)
+  {
+      .sep{
+         padding-bottom: 7em;
+  
+      }
+      footer{
+         position: fixed;
+      }
+  
+  }
+  #container {
+    width: 140px;
+    height: 20px;
+    position: relative;
+    background: yellow;
+  }
+  #animate {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: red;
+  }

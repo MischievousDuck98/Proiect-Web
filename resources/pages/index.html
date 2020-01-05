@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+ <html lang="ro">
+<head>
+    <title>Empowered Businesses</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Andrei Voiniea">
+    <meta name="description" content="Empowered Businesses iti propulseaza afacerea.Ticketing pentru problemele tale la un click distanta.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Firme,pret,tip cont,despre noi,ticketing,business,online, hall of fame">
+    <link rel="stylesheet" type="text/css" href="./../styles/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./../misc_scripts/clickable.js"></script>
+    <script src="./../misc_scripts/hover.js"></script>
+    <script src="./../misc_scripts/animation.js"></script>
+    <link rel="icon" href="./../images/favicon.gif" type="image/gif">
+</head>
+<body>
+    <div class="backgrim"></div>
+    <header>
+        <h1 lang="en">Empowered Businesses</h1>
+        <div id="centeredmenu">
+          <nav>
+            <ul>
+               <li class="active"><a href="#">Acasa</a>
+                  <ul>
+                     <li><a href="/index">Prezentare</a></li>
+                     <li class="has-submenu"><a href="#">Contul meu</a>
+                         <ul class="submenu">
+                           <li><a href="/setari">Setari</a></li>
+                           <li><a href="/prefs">Preferinte</a></li>
+                           <li><a href="/logout">Delogheaza-te</a></li>
+                         </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li><a href="/sesizari">Sesizari</a>
+                  <ul>
+                     <li><a href="/newses">Sesizare noua</a></li>
+                     <li><a href="/active">Active</a></li>
+                     <li><a href="/rez">Rezolvate</a></li>
+                  </ul>
+               </li>
+               <li><a href="/altele">Altele</a>
+                  <ul>
+                     <li><a href="/news">Stiri</a></li>
+                     <li><a href="/contact">Contact</a></li>
+                  </ul>
+               </li>
+            </ul>
+          </nav>
+         </div>
+         <%=typeof message!='undefined'?message:''%>
+         <div id ="container">
+            <div id ="animate" onmouseover="mover(this)" onmouseout="mout(this)"></div>
+          </div>
+    </header>
+    <main>
+        <div style="padding-left:1em">
+                <h2>Firme care ne apreciaza (<i lang="en">Hall of fame</i>)</h2>
+                <p><i><em>"Pentru ca orice gand bun conteaza!"</em></i></p>
+                <ul class="scrollmenu">
+                        <li>Firma1</li>
+                        <li>Firma2</li>
+                        <li>Firma3</li>
+                        <li>Firma4</li>
+                        <li>Firma5</li>
+                        <li>Firma6</li>
+                        <li>Firma7</li>
+                        <li>Firma8</li>
+                        <li>Firma9</li>
+                        <li>Firma10</li>
+                        <li>Firma11</li>
+                        <li>Firma12</li>
+                </ul>
+        </div>
+
+        <section>
+           <h2>Motivatie:</h2>
+           <p><b>"De ce noi?"</b></p>
+        </section>
+        <article>
+           <h3>Cine suntem?</h3>
+           <p>
+              Suntem o mica echipa de antreprenori si specialisti in domeniul web care isi propune sa usureze munca de front-end a cat mai multor companii din segmentul IT&C, astfel reducand costurile.
+           </p>
+           <p>
+              Concret: am creat o platforma online de ticketing eficienta si usor de folosit pentru toate nevoile firmei dvs.
+           </p>
+           <p>
+              Functionalitati:
+           </p>
+         </article>
+         <div class="table_container">
+           <table>
+               <thead>
+                   <tr>
+                       <th>Tip Cont</th>
+                       <th>Functii</th>
+                       <th>Pret</th>
+                   </tr>
+               </thead>
+           
+               <tbody>
+                   <tr>
+                       <td>PowerFree</td>
+                       <td>
+                          <ul>
+                             <li>Ticketing de baza</li>
+                             <li>Raport de baza/ticket</li>
+                             <li>Comentarii</li>
+                             <li>Escalare situatie</li>
+                             <li>Download/upload fisiere</li>
+                             <li>Descarcare rapoarte in format .csv</li>
+                          </ul>
+                       </td>
+                       <td>4$</td>
+                   </tr>
+           
+                   <tr>
+                       <td>PowerPro</td>
+                       <td>Aceleasi functii ca PowerFree +
+                          <ul>
+                             <li>Prioritizare</li>
+                             <li>Sortare dupa criterii multiple</li>
+                          </ul>
+                       </td>
+                       <td>5$</td>
+                   </tr>
+           
+                   <tr>
+                       <td>PowerPremium</td>
+                       <td>Aceleasi functii ca PowerPro +
+                          <ul>
+                            <li>Suport clienti 24/7</li>
+                            <li>Statistici utilizare</li>
+                          </ul>
+                       </td>
+                       <td>10$</td>
+                   </tr>
+               </tbody>
+           </table>
+         </div>
+      </main>
+     <div class="sep"></div>
+    <footer> 
+      <p lang="en">Copyright@ <i>Empowered Businesses</i> (2019). All rights reserved!</p>
+    </footer>
+</body>
+</html>

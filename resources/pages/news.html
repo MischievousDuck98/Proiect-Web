@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "ro">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Empowered Businesses</title>
+<meta charset="utf-8">
+<meta name="keywords" content="Stiri,despre noi,ticketing,business,recente,firma">
+<meta name="description" content="Aceasta este pagina de stiri a 'Empowered Businesses'. Ramai la curent cu tot ceea ce te intereseaza despre noi">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="./../misc_scripts/clickable.js"></script>
+<script src="./../misc_scripts/hover.js"></script>
+<script src="./../misc_scripts/animation.js"></script>
+<link rel="icon" href="./../images/favicon.gif" type="image/gif">
+<meta name="author" content="Andrei Voiniea">
+<link rel="stylesheet" type="text/css" href="./../styles/news.css">
+</head>
+<body>
+        <div class="backgrim"></div>
+        <header>
+            <h1 lang="en">Empowered Businesses</h1>
+            <div id="centeredmenu">
+              <nav>
+                <ul>
+                    <li><a href="#">Acasa</a>
+                      <ul>
+                         <li><a href="/index">Prezentare</a></li>
+                         <li class="has-submenu"><a href="#">Contul meu</a>
+                          <ul class="submenu">
+                            <li><a href="/setari">Setari</a></li>
+                            <li><a href="/prefs">Preferinte</a></li>
+                            <li><a href="/logout">Delogheaza-te</a></li>
+                          </ul>
+                      </li>
+                   </ul>
+                   </li>
+                   <li><a href="/sesizari">Sesizari</a>
+                      <ul>
+                         <li><a href="/newses">Sesizare noua</a></li>
+                         <li><a href="/active">Active</a></li>
+                         <li><a href="/rez">Rezolvate</a></li>
+                      </ul>
+                   </li>
+                   <li class="active"><a href="/altele">Altele</a>
+                      <ul>
+                         <li><a href="/news">Stiri</a></li>
+                         <li><a href="/contact">Contact</a></li>
+                      </ul>
+                   </li>
+                </ul>
+              </nav>
+             </div>
+             <%=typeof message!='undefined'?message:''%>
+             <div id ="container">
+              <div id ="animate" onmouseover="mover(this)" onmouseout="mout(this)"></div>
+            </div>
+        </header>
+<main>
+
+<div class="header">
+  <h2>Stiri</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Titlu postare</h2>
+      <h5>Descriere postare, Nov 7, 2019</h5>
+      <div class="fakeimg" style="height:200px;">Imagine</div>
+      <p>Text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>Titlu postare</h2>
+      <h5>Descriere titlu, Nov 6, 2019</h5>
+      <div class="fakeimg" style="height:200px;">Imagine</div>
+      <p>Text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+</div>
+<div class="rightcolumn">
+        <div class="card">
+          <h2>Despre firma</h2>
+          <div class="fakeimg" style="height:100px;">Imagine</div>
+          <p>Text despre noi in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <div class="card">
+          <h3>Urmareste-ne</h3>
+          <p>Text..</p>
+        </div>
+      </div>
+</main>
+<div class="sep"></div>
+    <footer> 
+      <p lang="en">Copyright@ <i>Empowered Businesses</i> (2019). All rights reserved!</p>
+    </footer>
+</body>
+</html>
