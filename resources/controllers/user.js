@@ -58,7 +58,7 @@ exports.logout=function(req,res){
   return res.redirect("/login"); 
 }
 
-exports.index=function(req,res){ // De aici in jos am repetat cod cred inutil. Voiam sa creez cumva un "exports.ceva=function" dinamic care sa aiba grija de toate paginile care se pot incarca in fereasta curenta de browser
+exports.index=function(req,res){
   if(isLoggedIn(req))
   {
     var message=req.session.user.email;
@@ -93,7 +93,17 @@ exports.contact=function(req,res){
     return res.redirect("login");
   }
 }
-
+exports.active=function(req,res){
+  if(isLoggedIn(req))
+  {
+    var message=req.session.user.email;
+    return res.render("views/active_tickets.ejs",{message: message});
+  }
+  else
+  {
+    return res.redirect("login");
+  }
+}
 function isLoggedIn(req) {
   if(req.session.userId) {
       return true;
