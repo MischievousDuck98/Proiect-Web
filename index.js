@@ -23,16 +23,17 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 app.get('/', function (req, res) { 
    res.render( __dirname + "/resources/pages/register.html");  
-})  
+})  ;
 app.get('/login', function (req, res) {  
    res.render( __dirname + "/resources/pages/login.html");  
-})
+});
 app.post('/login',userController.login);
 app.post('/signup',userController.signup);
 app.get('/logout',userController.logout);
 app.get('/index',userController.index);
 app.get('/news',userController.news);
 app.get('/contact',userController.contact);
+app.get('/active', userController.active);
 app.post('/contact', function(req, res) {
    var form = new formidable.IncomingForm();
    form.parse(req, function(err, fields, files) {
@@ -58,16 +59,13 @@ app.post('/contact', function(req, res) {
 });
 passport.serializeUser((user, done) => {
    done(null, user.email);
- });
- 
+});
 passport.deserializeUser((email, done) => {
    done(null, {email: email});
 }); 
-
 app.get('*', function(req, res){
    var stat = '(Error: 404) Pagina pe care o cauti nu a fost gasita!';
    stat = stat.fontsize(10);
    res.status(404).send(stat.fontcolor("red") + '\n');
 });
-
 app.listen(8012);
